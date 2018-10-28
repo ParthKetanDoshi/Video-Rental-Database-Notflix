@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Issue-Return</title>
+	<style>
+		body
+        {
+            background-color: #1E1D1D;
+        }
+        form
+        {
+        	font-family: "Bebas Neue";
+            color: #E50914;
+            font-size: 28px;
+        }
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th
+        {
+            font-family: "Bebas Neue";
+            color: #E50914;
+            font-size: 35px;
+            background-color: #000000;
+        }
+        td
+        {
+            font-family: "Bebas Neue";
+            color: #E50914;
+            font-size: 28px;
+            text-align: center;
+        }
+        .notch
+        {
+            position: fixed;
+            width: 100%;
+			bottom: 0;
+            left: 0;
+        }
+        .notflix
+        {
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+        }
+        .btc
+        {
+            position: fixed;
+            height: 35px;
+            bottom: 40px;
+            left: 150px;
+        }
+        .btv
+        {
+            position: fixed;
+            height: 35px;
+            bottom: 40px;
+            right: 150px;
+        }
+	</style>
+</head>
+<body>
+	
+	<div class="section"> 
+        <a href="issret.html"><img src="notch.png" class="notch" /></a>
+        <a href="index.html"><img src="notflix.png" class="notflix" /></a>
+        <a href="cust.html"><img src="cust.png" class="btc" /></a>
+        <a href="vid.html"><img src="vid.png" class="btv" /></a>
+    </div>
+    <form action="issret.php" method="post">
+    	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Customer ID: <input type="text" name="cid" size="2"> 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Video ID: <input type="text" name="vid" size="2"> 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Number of Videos: <input type="Number" name="numvids" min="1" max="3"><br>
+		
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Issue Date: <input type="Date" name="issuedate" inputmode="Date"> 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+		Return Date: <input type="Date" name="returndate" inputmode="Date"><br>
+		
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Condition(0:Good to 10:Bad): <input type="Number" name="cond" min="0" max="10"> 
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		Fine(Condition x 5 + Number of Elapsed Days x 2): <input type="Number" name="fine" min="0" max="999"><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="Submit" name="Submit" style="background-color: #1E1D1D;font-family: Bebas Neue;font-size: 40px;border-color: #1E1D1D; color: #E50914;">
+	</form>
+    <table>
+        <tr>
+            <th>Customer ID</th>
+            <th>Video ID</th>
+            <th>Number of Videos</th>
+            <th>Issue Date</th>
+            <th>Return Date</th>
+            <th>Condition</th>
+            <th>Fine</th>
+        </tr>
+    </table>
+    <div style="overflow:auto;overflow-x: hidden;height: 250px;width: 100%;">
+    <table>
+        <tr>
+            <td>1</td>
+            <td>A</td>
+            <td>RK</td>
+            <td>SB</td>
+            <td>YC</td>
+            <td>AS</td>
+            <td>AA</td>
+            <td>70</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>B</td>
+            <td>SK</td>
+            <td>SB</td>
+            <td>KJ</td>
+            <td>HK</td>
+            <td>AA</td>
+            <td>90</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>C</td>
+            <td>HR</td>
+            <td>DB</td>
+            <td>YC</td>
+            <td>HK</td>
+            <td>AA</td>
+            <td>80</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>D</td>
+            <td>RS</td>
+            <td>CN</td>
+            <td>RV</td>
+            <td>GR</td>
+            <td>AR</td>
+            <td>150</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>E</td>
+            <td>AK</td>
+            <td>SB</td>
+            <td>RV</td>
+            <td>HS</td>
+            <td>AR</td>
+            <td>140</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>F</td>
+            <td>RK</td>
+            <td>CN</td>
+            <td>KJ</td>
+            <td>HS</td>
+            <td>AR</td>
+            <td>100</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>G</td>
+            <td>SK</td>
+            <td>DB</td>
+            <td>YC</td>
+            <td>AS</td>
+            <td>AA</td>
+            <td>110</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>H</td>
+            <td>HR</td>
+            <td>SB</td>
+            <td>KJ</td>
+            <td>GR</td>
+            <td>AA</td>
+            <td>60</td>
+            <td>190</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>I</td>
+            <td>RS</td>
+            <td>DB</td>
+            <td>YC</td>
+            <td>HS</td>
+            <td>AA</td>
+            <td>120</td>
+            <td>130</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>J</td>
+            <td>AK</td>
+            <td>CN</td>
+            <td>KJ</td>
+            <td>AS</td>
+            <td>AA</td>
+            <td>130</td>
+            <td>120</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
